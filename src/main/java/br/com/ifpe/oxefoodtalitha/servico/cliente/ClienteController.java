@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ifpe.oxefoodtalitha.modelo.cliente.Cliente;
 import br.com.ifpe.oxefoodtalitha.modelo.cliente.ClienteService;
+import br.com.ifpe.oxefoodtalitha.util.entity.GenericController;
 
 @RestController
 @RequestMapping("/api/cliente")
 
-public class ClienteController {
+public class ClienteController extends GenericController {
 	@Autowired
 	private ClienteService clienteService;
 
